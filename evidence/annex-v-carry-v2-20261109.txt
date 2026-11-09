@@ -1,0 +1,33 @@
+ANNEX V CARRY v2 — THIS SEAT
+2026-11-09. Package: /workspace/attachments/Annex V generators — carry package v2.zip
+ZIP length 11,809. ZIP SHA-256 0954c453cb797f738027854941310fc4d1546c9107732a7210ac2385ac7847bb
+The zip was not modified. REF-004 was not modified. No repository commit. No validator.
+
+CITATION CHECK AGAINST THE RATIFIED TEXT
+
+| File | REF-004 cites | This seat hashed | Citation |
+|---|---|---|---|
+| vectors.py | 43533628… | 43533628a5d8bbc2abe5c8548be768e6c21d091348a1e4bf3862e8db269435b2 | MATCH |
+| independent_vectors.py | d5d1dda2… | d5d1dda28d0d4eaa39dd57c47f4c29d91a5137e97cc1793b5202f424766c879a | MATCH |
+| o3_demo.py | cc5c9f4a… | ddb6d9cf455262a6e7d8bb594e253b4a77c0a59155633e84dcee4d240311c4ae | MISMATCH |
+| ref004_receipt_vectors.py | 9901771e… | 63a6050c47836ec59ab9be0c64c79402f0fbc822a53ff03df48c865aae90f4ab | MISMATCH |
+| ref004_amendment_demos.py | 618e388f73d49ea9b4a44ea18f56889f5e7fb76e08f90b23f8086592aa6c4d0f | 618e388f73d49ea9b4a44ea18f56889f5e7fb76e08f90b23f8086592aa6c4d0f | MATCH |
+
+The two mismatches are the finding. The carried bytes are not the files Annex V names. The cover note says the same and says the cited digests were superseded before ratification. That explanation was read. It was not adopted as a correction of REF-004. A corrigendum would be a new act. This seat does not make one.
+
+BEHAVIOR CHECK, LABELED AS SUCH
+The mismatched files were still executed, because another seat's output claim is not this seat's. They were not thereby accepted as the cited files.
+Every value Annex V and Annex D print was reproduced here:
+- TV-TH1 209035cebf93ca87fecf82df31222ae735e299110db3a654a61524e314c38b05
+- TV-EV1 f106d62be02f0541652b9012366e339f566b5807875fa15d86a8bca9bb01b8fe
+- TV-EV2 426a099d5cf964e00953e971acb22ebf927823e5c78571e276ca687f435917b2
+- TV-TS1 825271a47fa681df1806997fa94b835ceaa23b00161655e9b3ea02fe19e8247b
+- TV-WRC raw 220d755a09e92664a387fa09b29375a78fa42cdb6b26e4491c1cb2fc88ae3b50 and b7845f2389a0e0d93374e7988d2ef1694d63394b901032b139690d869ca451e9; canonical 6f7f61e0fe5cc8ba3d84b042dbdf548c8b0ce4e3a11844f457cea79c77d48b47
+- TV-R1 7532df7577ddaed5451078eddbcdac8242b660f207bb04f3605bc817ccadcd6d over 172 bytes
+- TV-R2 9aea90d1efee3b6c67e996d4b86c9f2ca4d3757ebfc7b09d4f55335a435849a9 over 172 bytes
+- Demo 1 field 0000000000000010000000000003d090
+- Demo 5 Translator_Hash 7f25fc367e43c0801c1f312166be980d52258626e458f952b0bd15057c225e63
+The amendment demonstrations printed PASS on the stated cases.
+
+WHAT THIS DOES NOT CLOSE
+Annex L item 6 is not closed. The printed vector values reproduced at this seat. The two generator citations in the ratified annex did not. WRC still has no decision procedure. T-1, T-2, NIC-91, execution provenance, and UQ-6 through UQ-8 are unchanged. No receipt implementation is authorized.
