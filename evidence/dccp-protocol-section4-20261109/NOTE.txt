@@ -1,0 +1,7 @@
+Section 4 replacement, 2026-11-09.
+Not ratification. Not conformance. Not authorization beyond this replacement. Not an amendment of REF-004.
+Replaces the JSON.stringify sentence in section 4. Does not change message.ts.
+A section 4 refusal is FIELD. No signature check runs, and there is no message identity.
+Previous protocol text: 5341 bytes, e8b66429488ec27b4daa146ba8478dc31f44b5ba0961c0f3386808053296f63d.
+This file: 7796 bytes, f174801e290bd910528f748eae47e92ce05a49aebad3e2e334d54b8b09ef1ec6.
+evidence/dccp-protocol-20261109/ and the second-seat receipt are not modified.
