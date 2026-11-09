@@ -1,0 +1,15 @@
+DCCP foundation set — 2026-11-09
+Status: evidence bytes. Not ratification. Not conformance. Not authorization. Not adoption.
+Shelf path: evidence/dccp-foundation-20261109/
+
+The three files named in the carry are the checker, the envelope, and the draft.
+The test files are the harnesses those checks run. sig.ts and node-crypto.ts are the import closure message.ts needs in order to run. None of these files was edited for this commit.
+@noble/curves is an external package required by message.ts and sig.ts. It is not in this set.
+
+  1924  870ab1c20df8bfc60a00eb52269c38f5d7eef0b7552da558adf306f09327f3dc  foundation.ts
+  4765  86117056a6653fe2ef26f66a32123cf527254a2171eb0bf7f7d46839d177d8b6  foundation.test.ts
+  3858  13079847dd0528a79099c27bc09fb77e3149d2e0467cf2f1ce3eb80947c2c6ca  message.ts
+  2793  07067fb3b005cd42e8576b8477063690c2f1536d50fff9d2567f98549b607265  message.test.ts
+  5341  e8b66429488ec27b4daa146ba8478dc31f44b5ba0961c0f3386808053296f63d  DCCP-PROTOCOL.md
+  4328  3b7f67f857d00ce25daecf7491a53b52db24898d5c04ea068fc1c896b6ae10c1  sig.ts
+  1617  6eec353ca19b4a1f2e18481e7248256e70db2ddd1671ca9f8e6b7ecec8e0f64c  node-crypto.ts
