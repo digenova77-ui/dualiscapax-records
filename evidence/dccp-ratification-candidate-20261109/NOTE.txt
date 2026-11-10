@@ -1,0 +1,49 @@
+Assembly record - DCCP ratification candidate (2026-11-09)
+
+Assembled by Idris under the Founder's instruction of
+2026-11-09 19:32 EST ("Assemble the candidate ratification
+text"). Assembly is not ratification.
+
+Candidate: DCCP-PROTOCOL-CANDIDATE.md, 11,304 bytes,
+SHA-256 9ce2156ab95138083bad2b4a8b919cd50fa0e31ff3fbfd4beafb2d4dbf30f688.
+
+Sources, all verified in custody before assembly:
+- Successor protocol text, 7,796 bytes, SHA-256 f174801e...
+  (shelf commit ce86e00a...), the base.
+- Decided section 5, DCCP-SECTION-5.md, 3,757 bytes,
+  SHA-256 070eb790... (shelf commit 5e8cb534...; decided
+  under the Founder's merit rule, decision record commit
+  f263ecab...).
+- Corrected preimage behind section 4, DCCP-PREIMAGE.md,
+  3,468 bytes, SHA-256 bb30e86b... (already incorporated
+  by the base text's section 4; not re-merged).
+
+Declared operations (the whole change account; diff against
+the base is 44 lines, four hunks):
+1. Status preamble replaced: candidate status, the section
+   5 decision and its record, the unreconciled state of
+   message.ts, and the open items carried on the face.
+2. Section 5 replaced by the decided text's operative
+   body. Verified after assembly: the operative body is
+   byte-identical to the decided text. Its definitional
+   paragraphs move inside the section they define. One
+   wording adaptation: "This draft does not apply" becomes
+   "This section does not apply".
+3. Section 6 step 5 replaced by the wording the decided
+   text specifies. Step 6 already matched and is unchanged.
+4. Section 8 status paragraph updated to record the
+   section 5 decision beside the section 4 act.
+
+Nothing else differs from the base text.
+
+Open, on the candidate's face and still the Founder's:
+- The case of the signature's hexadecimal spelling.
+- Unicode normalization (section 4 carries it as unchosen).
+- Confirmation of scope (this candidate: the message
+  protocol only).
+- The protocol gate's formal remainder: the gap
+  assessment's assessor was never named, and the
+  interoperability proof the gate named has not been run
+  as a formal act.
+
+Not ratification. Not an implementation. Not authorization.
