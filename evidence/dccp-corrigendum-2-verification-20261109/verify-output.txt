@@ -1,0 +1,8 @@
+A1 composed identity   : 8c3f6af75d8e6c12e90f50ccf50473401391f8fe067ad0bc9e02813063f2224b OK
+A2 decomposed identity : e0b6264b1de7dd76fac53499fa7a20dd489a93c81c93a7b3fec579e9665d6cc1 OK
+A3 sig over composed   : MATCH OK
+A4 sig over decomposed : EQUATION (expect EQUATION)
+B1 decomposed x decomposed: MATCH OK
+B2 decomposed x composed  : {"match":false,"reason":"EQUATION"} (expect EQUATION)
+B3 composed x composed    : MATCH OK
+B4 composed x decomposed  : {"match":false,"reason":"EQUATION"} (expect EQUATION)
