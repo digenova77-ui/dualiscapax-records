@@ -5,6 +5,13 @@
  * 9ce2156ab95138083bad2b4a8b919cd50fa0e31ff3fbfd4beafb2d4dbf30f688,
  * ratified by Founder act 2026-11-09 (ratification record on the records shelf).
  *
+ * Corrigendum 1 (Founder act, 2026-11-09) decides the signature's
+ * hexadecimal case, which the ratified text carries as not decided:
+ * a reader accepts only lowercase; a signature spelling of 128
+ * hexadecimal characters containing an uppercase character is refused
+ * as FIELD at section 6 step 2. See the corrigendum record on the
+ * records shelf.
+ *
  * A match proves this key signed these bytes. It does not grant permission,
  * prove a clock, bind an identity, or execute a REQUEST.
  */
@@ -183,8 +190,9 @@ export function checkSignature(preimageBytes: Uint8Array, signature: Uint8Array,
 /* Section 6 — verification, steps in order.                           */
 /* ------------------------------------------------------------------ */
 
-/** Steps 1-3 (step 4's refusal is raised by the encoder in open/seal). */
-function fieldsRefusal(fields: MessageFields, content: Uint8Array): Refusal | null {
+/** Steps 1-3 (step 4's refusal is raised by the encoder in open/seal).
+ *  The signature parameter is read only by Corrigendum 1's step-2 clause. */
+function fieldsRefusal(fields: MessageFields, content: Uint8Array, signature?: string): Refusal | null {
   if (!CLASSES.includes(fields.class)) return 'CLASS'
   if (
     fields.v !== '1' ||
@@ -194,6 +202,14 @@ function fieldsRefusal(fields: MessageFields, content: Uint8Array): Refusal | nu
     !HEX64.test(fields.prev) ||
     (fields.at !== undefined && (typeof fields.at !== 'string' || fields.at.length === 0))
   ) {
+    return 'FIELD'
+  }
+  // Corrigendum 1 (Founder act, 2026-11-09), section 6 step 2: a signature
+  // spelling of 128 hexadecimal characters that contains an uppercase
+  // character is refused as FIELD. A spelling that is not 128 hexadecimal
+  // characters is not this clause's case; open() refuses it further down,
+  // as SIGNATURE (carried) — its word remains a separate, open decision.
+  if (typeof signature === 'string' && SIG_HEX.test(signature) && /[A-F]/.test(signature)) {
     return 'FIELD'
   }
   if (contentHash(content) !== fields.content_sha256) return 'CONTENT'
@@ -228,16 +244,15 @@ export function open(envelope: Envelope, content: Uint8Array, publicKey: Uint8Ar
     prev: envelope.prev,
     ...(envelope.at === undefined ? {} : { at: envelope.at }),
   }
-  const refused = fieldsRefusal(fields, content)
+  const refused = fieldsRefusal(fields, content, envelope.signature)
   if (refused) return { match: false, reason: refused }
   const pre = encodePreimage(fields)
   if (pre === null) return { match: false, reason: 'FIELD' } // step 4
   const preimageBytes = new TextEncoder().encode(pre)
   const signature = envelope.signature
-  // The case of the signature's hexadecimal spelling is not decided by
-  // the ratified text: section 5 runs on bytes, and no step refuses an
-  // uppercase spelling. A spelling that is not 128 hex characters cannot
-  // be decoded into the 64 bytes section 5 runs on: SIGNATURE (carried).
+  // A spelling that is not 128 hex characters cannot be decoded into the
+  // 64 bytes section 5 runs on: SIGNATURE (carried). An uppercase spelling
+  // never reaches this line: Corrigendum 1 refuses it as FIELD at step 2.
   if (typeof signature !== 'string' || !SIG_HEX.test(signature)) {
     return { match: false, reason: 'SIGNATURE' }
   }

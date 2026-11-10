@@ -1,0 +1,6 @@
+signature (as written, lowercase): d4ce6c7566271f498089a613c537f2d087ebb2663a9d1d3fd074c6bbac52227969f00074b8ee5a929e42260a0abe873b5723be4863fa9425233554ea497e3e00
+P1 lowercase honest signature: {"match":true,"hash":"2a2216dabcab747eeb5ea2fcc666d93324c7bcbeef733f5ff91b4f5d4754dc3c"}
+P2 uppercase twin: {"match":false,"reason":"FIELD"}
+P3 abcd (shape failure, word unchanged): {"match":false,"reason":"SIGNATURE"}
+P4 uppercase + wrong content (step 2 FIELD precedes step 3 CONTENT): {"match":false,"reason":"FIELD"}
+P5 lowercase + wrong content (control): {"match":false,"reason":"CONTENT"}
