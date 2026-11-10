@@ -36,12 +36,20 @@ The matrix (`assessment.mjs`, committed with this record so any seat can re-run 
 None of the following is claimed as conformance. Each is isolated, with its observed behavior on record:
 
 - **C1 — Public key not 32 bytes.** The text presupposes a 32-byte key. The implementation returns `DECODE` (matrix row C1). An implementation handling of an out-of-shape input, not a textual prescription.
-Updated 2026-11-09. C2 and C3 are not defects against the ratified text. The shape is normative. The refusal word is not. Accepting `A-F` agrees with the hexadecimal alphabet. A later act may still prescribe a refusal word or a lowercase-only reader. That act has not been taken.
+Updated 2026-11-09. C2 and C3 are withdrawn as demonstrated defects against the ratified text. The examination records that conclusion. It does not amend the protocol and it does not grant authority.
+
+* C2 withdrawn as a defect: the 128-character hexadecimal shape is normative; `abcd` cannot produce the required 64 bytes. `SIGNATURE` is neither mandated nor prohibited as the refusal word for that malformed shape.
+* C3 withdrawn as a defect: uppercase hexadecimal is permitted by the stated alphabet. The lowercase-writing requirement does not impose lowercase-only reading.
+* No new prescription: no refusal vocabulary or stricter signature alphabet has been added.
+* No preimage change: signature spelling remains outside the preimage and does not change the message hash.
+* No authorization: a matching signature remains evidence to evaluate, not permission to act.
+
+The ratified digest `9ce2156a…` remains the governing text for this examination. Any later prescription must be a separately dated corrigendum that explicitly names that digest.
 
 | Row | Disposition |
 | --- | --- |
-| C2 — short signature returns `SIGNATURE` | Shape rejection is appropriate. The refusal word is unspecified. No demonstrated contradiction with the ratified text. |
-| C3 — uppercase signature hex accepted | Consistent with the stated hexadecimal alphabet. No demonstrated contradiction with the ratified text. |
+| C2 — short signature returns `SIGNATURE` | Withdrawn as a defect. Shape rejection is appropriate. The refusal word is unspecified. No demonstrated contradiction with the ratified text. |
+| C3 — uppercase signature hex accepted | Withdrawn as a defect. Consistent with the stated hexadecimal alphabet. No demonstrated contradiction with the ratified text. |
 - **C4 — Unicode normalization.** None is performed (demonstrated by B21, which is the text's stated consequence). Whether normalization should be chosen remains open.
 - **C5 — The author's checkout (the Founder's safeguard, checked against digests, not commit identifiers).** `scarlet-xenon-lion-dove` is private (the public API returns 404), so the check ran through the authenticated connector's directory listing — per-file git blob digests and sizes, not commit names alone. At its head `89e5b92e4b3861677bf19d9379c50f7fa6d5faa9` (unchanged through the DCCP work), `src/dccp/` holds 292 entries and **no `message.ts`, no `message-node.ts`, no `post.ts`, no `foundation.ts`, and no DCCP protocol texts** — the messaging files were never pushed to that tree; the implementation of record is the shelf's foundation-set copy. The result is therefore **absent**, neither matching nor divergent. For any future seat-side report, the arbitration digests are: original `message.ts` — 3,858 bytes, git blob `d8f6b040decab486ac84c90819fb3451b01660a6` (SHA-256 `13079847…`); reconciled `message.ts` — 10,755 bytes, git blob `1740632c11abc5925bc1e25c7fcb55d8dafc1bb2` (SHA-256 `558fe94e…`). The author's *local* checkout is not visible from outside; if that seat reports a blob digest for its file, it can be arbitrated against those two numbers immediately.
 
