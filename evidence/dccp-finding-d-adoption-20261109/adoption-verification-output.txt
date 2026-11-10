@@ -1,0 +1,45 @@
+ADOPTION VERIFICATION RUN — repaired matrix + Finding D probes against the ADOPTED bytes
+Adopted file: message-adopted.ts, 10,791 B, sha256 63c604fa628dc811ce5c2b901fbe8ea55fed8f87390892da7a55de810418130a
+Environment: Node v24.22.1 · @noble/curves 2.4.0
+Run at: 2026-11-09T20:10:06-05:00
+---
+PASS  B1  expected=FIELD got=FIELD  — §6.2: v is not the string 1 (a number)
+PASS  B2  expected=FIELD got=FIELD  — §6.2: v is not 1 (string 2)
+PASS  B3  expected=CLASS got=CLASS  — §6.1: class not one of the seven
+PASS  B4  expected=CLASS got=CLASS  — §6.1: class names are exact (lowercase public)
+PASS  B5  expected=FIELD got=FIELD  — §6.2: to empty
+PASS  B6  expected=FIELD got=FIELD  — §2: null is not a legal value (to null)
+PASS  B7  expected=FIELD got=FIELD  — §6.2: content_sha256 must be 64 lowercase hex (uppercase)
+PASS  B8  expected=FIELD got=FIELD  — §6.2: content_sha256 must be 64 chars (63)
+PASS  B9  expected=FIELD got=FIELD  — §6.2: prev must be 64 lowercase hex (uppercase)
+PASS  B10  expected=FIELD got=FIELD  — §6.2: at present and empty
+PASS  B11  expected=CONTENT got=CONTENT  — §6.3: content hash mismatch
+PASS  B12  expected=MATCH got=MATCH  — §2: unknown fields are not signed (extra field ignored, same identity)
+PASS  B13  expected=CLASS got=CLASS  — §6 order: CLASS before CONTENT
+PASS  B14  expected=FIELD got=FIELD  — §6 order: FIELD before CONTENT
+PASS  B15  expected=CONTENT got=CONTENT  — §6 order: CONTENT before section 5 (small-order key, wrong content)
+PASS  B16  expected=CLASS got=CLASS  — §6 order: CLASS (step 1) before preimage refusal (step 4)
+PASS  B17  expected=EXACT got=EXACT  — §4 escape table: quote, backslash, b/t/n/f/r, \u00xx lowercase, solidus raw, non-ASCII raw UTF-8
+PASS  B18  expected=RAW got=RAW  — §4: U+007F is every-other-scalar (raw byte, not an escape)
+PASS  B19  expected=FIELD got=FIELD  — §6.4: lone surrogate in at -> encoder refusal -> FIELD
+PASS  B20  expected=FIELD got=FIELD  — §4: a non-string value is refused (to is a number)
+PASS  B21  expected=TWO got=TWO  — §4: no normalization — canonically equivalent strings remain two preimages (two identities)
+PASS  B22  expected=DECODE got=DECODE  — §5.1: key with y >= p
+PASS  B23  expected=DECODE got=DECODE  — §5.5: R with y >= p (S in range, honest key)
+PASS  B24  expected=SCALAR got=SCALAR  — §5.4 boundary: S = L exactly
+PASS  B25  expected=EQUATION got=EQUATION  — §5.4 boundary: S = L-1 is inside the range; the equation decides
+PASS  B26  expected=SMALL_ORDER got=SMALL_ORDER  — §5 order: 5.2 before 5.4 (identity key, S = L)
+PASS  B27  expected=DECODE got=DECODE  — §5 order: 5.1 before 5.4 (non-canonical key, S = L)
+PASS  B28  expected=SCALAR got=SCALAR  — §5 order: 5.4 before 5.5 (bad R and S = L)
+PASS  B29  expected=MIXED got=MIXED  — §5.3: mixed key refused before the equation
+PASS  B30  expected=PREV got=PREV  — §6 PREV: envelope whose prev is not the log tip (empty log)
+PASS  B31a  expected=EXTENDS got=EXTENDS  — §6 PREV: control — the envelope extends its own log
+PASS  B31  expected=PREV got=PREV  — §6 PREV: the same envelope against a foreign log
+PASS  C1  expected=DECODE got=DECODE  [carry]  — CARRY: public key not 32 bytes (text presupposes 32)
+PASS  C2  expected=SIGNATURE got=SIGNATURE  [carry]  — CARRY: signature spelling not 128 hex chars
+PASS  C3  expected=MATCH got=MATCH  [carry]  — CARRY: uppercase signature spelling decodes to the same bytes
+
+TOTAL 35 rows, 35 pass, 0 fail; defined-domain rows: 32, carry rows: 3
+PASS  D1  preimage(v="2") refused with FIELD, no bytes emitted
+PASS  D2  preimage(v="1") still encodes
+exit: 0

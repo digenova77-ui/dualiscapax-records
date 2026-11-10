@@ -83,6 +83,7 @@ function encodeString(value: string): string | null {
 }
 
 function encodePreimage(fields: MessageFields): string | null {
+  if (fields.v !== '1') return null
   const parts: string[] = []
   for (const key of KEY_ORDER) {
     const value = fields[key]
