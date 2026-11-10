@@ -3,7 +3,7 @@
 **EVIDENCE STATUS:** Builder-seat assessment, executed against the public shelf bytes. **The independent witness run is outstanding** — under the standing separation, no seat grades its own work into a verdict. Until a separate seat re-runs the matrix cold, the status is: ASSESSED AT THE BUILDER'S SEAT — WITNESS OUTSTANDING. This is not a certification.
 **SOURCE DIGESTS:** ratified text `9ce2156ab95138083bad2b4a8b919cd50fa0e31ff3fbfd4beafb2d4dbf30f688` · implementation under assessment (shelf bytes) `558fe94e6b4ef03f91ae16dc7765fd098042664cb5b1a2b5b8fbacf6629f2ecf` · assessment matrix `d2b14ca90eb0308b0cfc0c1d1859193729a1c70f6d5c46559b6ffd15b2764614`
 **SCOPE:** the reconciled `message.ts` only, against the frozen ratified text. The ratified text was not reopened, and nothing in this assessment accommodates implementation convenience into it.
-**UNRESOLVED DEPENDENCIES:** the two spelling questions (signature hexadecimal case · the word for a malformed signature spelling) — preserved for their own decision records, per the Founder's instruction · the independent witness run.
+**UNRESOLVED DEPENDENCIES:** signature hex case and the malformed-signature refusal word — not defects against the ratified text; a prescription of either would be its own later record · the independent witness run.
 **AUTHORIZATION BOUNDARY:** this assessment is evidence about implementation behavior. It confers no authority and amends nothing.
 
 Established on the Founder's recommended next step (2026-11-09, 19:48 EST), with the three findings kept separate.
@@ -36,8 +36,12 @@ The matrix (`assessment.mjs`, committed with this record so any seat can re-run 
 None of the following is claimed as conformance. Each is isolated, with its observed behavior on record:
 
 - **C1 — Public key not 32 bytes.** The text presupposes a 32-byte key. The implementation returns `DECODE` (matrix row C1). An implementation handling of an out-of-shape input, not a textual prescription.
-- **C2 — Signature spelling not 128 hex characters.** The text names no word. The implementation carries the legacy word `SIGNATURE` (matrix row C2). Preserved for its own decision record.
-- **C3 — Uppercase signature spelling.** The text does not decide the case. The implementation decodes either case to the same bytes and the message opens (matrix row C3); `message-node.ts` refuses the same spelling as `FIELD`. The two implementations diverge on an undecided question; both behaviors are disclosed, neither is conformance. Preserved for its own decision record.
+Updated 2026-11-09. C2 and C3 are not defects against the ratified text. The shape is normative. The refusal word is not. Accepting `A-F` agrees with the hexadecimal alphabet. A later act may still prescribe a refusal word or a lowercase-only reader. That act has not been taken.
+
+| Row | Disposition |
+| --- | --- |
+| C2 — short signature returns `SIGNATURE` | Shape rejection is appropriate. The refusal word is unspecified. No demonstrated contradiction with the ratified text. |
+| C3 — uppercase signature hex accepted | Consistent with the stated hexadecimal alphabet. No demonstrated contradiction with the ratified text. |
 - **C4 — Unicode normalization.** None is performed (demonstrated by B21, which is the text's stated consequence). Whether normalization should be chosen remains open.
 - **C5 — The author's checkout (the Founder's safeguard, checked against digests, not commit identifiers).** `scarlet-xenon-lion-dove` is private (the public API returns 404), so the check ran through the authenticated connector's directory listing — per-file git blob digests and sizes, not commit names alone. At its head `89e5b92e4b3861677bf19d9379c50f7fa6d5faa9` (unchanged through the DCCP work), `src/dccp/` holds 292 entries and **no `message.ts`, no `message-node.ts`, no `post.ts`, no `foundation.ts`, and no DCCP protocol texts** — the messaging files were never pushed to that tree; the implementation of record is the shelf's foundation-set copy. The result is therefore **absent**, neither matching nor divergent. For any future seat-side report, the arbitration digests are: original `message.ts` — 3,858 bytes, git blob `d8f6b040decab486ac84c90819fb3451b01660a6` (SHA-256 `13079847…`); reconciled `message.ts` — 10,755 bytes, git blob `1740632c11abc5925bc1e25c7fcb55d8dafc1bb2` (SHA-256 `558fe94e…`). The author's *local* checkout is not visible from outside; if that seat reports a blob digest for its file, it can be arbitrated against those two numbers immediately.
 
