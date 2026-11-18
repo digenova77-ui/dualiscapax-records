@@ -276,3 +276,176 @@ Until those decisions are made, this remains a proposal in the record.
 - `evidence/gestation-examination-packet-20261114/organism-gestation-map-draft-20261114.md` blob: `9e29787a5ac5ead4cf439a656c35b05eee28a16b`
 
 **Verification note:** Repository contents were read through GitHub's read interface. No local checkout, test suite execution, CI reproduction, runtime deployment, or mutation of application code was performed in this proposal preparation.
+
+---
+
+## 10. Unity identity, voluntary participation, and continuity — candidate reconciliation
+
+**Status:** PROPOSED CLARIFICATION ONLY. This section does not reinterpret, amend, or supersede the Unity Canon. The exact controlling language must be reconciled and, if necessary, amended through its own ratification process.
+
+### 10.1 Distinguish the dimensions
+
+The inspected Unity Canon v1.7.3 states that Unity is a non-transferable identity token, bound to exactly one Unity ID, and says: "Unity IS the member; membership cannot change hands." It separately binds every flow to a Unity ID. This proposal preserves the explicit non-transferability rule and identifies a question the current wording does not fully resolve: how persistent identity relates to voluntary, renewable participation and withdrawal.
+
+The candidate model keeps these dimensions separate:
+
+1. **Identity reference:** the persistent, non-transferable identifier by which a participant's records and origin can be related. It is not sold, gifted, reassigned, or erased by ending a relationship.
+2. **Unity credential/token:** the existing Canon-defined, non-transferable identity-bound token. Its exact lifecycle and legal meaning remain controlled by the Canon; this proposal does not create a second token or a transfer path.
+3. **Participation state:** whether the identity is currently choosing to participate in the Unity relationship or mesh. Candidate states are NOT_JOINED, ACTIVE, PAUSED, WITHDRAWN, and UNKNOWN. These are proposed descriptive states, not yet canonical values.
+4. **Relationship state:** whether a particular scoped link between participants is active, paused, expired, revoked, or terminated. Ending one link does not automatically terminate every other relationship.
+5. **Historical record:** the append-only record of prior participation, contributions, receipts, disputes, and corrections. Withdrawal does not rewrite history.
+6. **Authority state:** the independently evaluated permission for a particular action under the controlling ratified rule. Identity, token possession, participation, relationship, Merit, standing, and resource availability do not independently grant execution authority.
+
+### 10.2 Candidate Unity principle
+
+> **Identity persists. Participation is voluntary and renewable. Relationships are scoped and revocable. Evidence is preserved. Authority is independently established.**
+
+The originating doctrine treats "we" as a choice, not an inherited identity or possession: participation is not assigned by birth, conscription, ownership, or permanent status; it is chosen and renewed through ongoing operation. This proposal treats that doctrine as a source requirement to reconcile with the exact Canon wording, not as permission to silently rewrite it.
+
+The phrase "Unity IS the member" therefore requires a Founder/Canon-level decision about whether it means:
+- the Unity token is the non-transferable credential identifying the member; or
+- possession of that token necessarily means the identity is continuously an active participant.
+
+Those meanings are not equivalent. The protocol must state which meaning is intended. Until resolved, implementations must not infer active consent from identifier or token presence alone.
+
+### 10.3 Candidate withdrawal requirements
+
+A participant's withdrawal from active participation must, subject to applicable independent obligations and the controlling law:
+
+- stop new participation-dependent exchanges and permissions;
+- revoke or expire that participant's live relationship grants according to their defined scope;
+- preserve the participant's identity reference and historical receipts;
+- preserve the provenance and origin of previously demonstrated work;
+- preserve disputes, corrections, and the fact and time of withdrawal;
+- avoid transferring identity, deleting historical standing, or fabricating continuing consent;
+- leave unrelated participants' independent records and relationships intact.
+
+Withdrawal from one relationship is not automatically withdrawal from the entire mesh. Withdrawal from participation is not retroactive erasure. Neither may be used to evade an independently established lawful obligation.
+
+### 10.4 Merit, ownership, standing, and Unity remain separate
+
+The inspected Unity Canon v1.7.3 makes Merit transferable while preserving immutable origin, and computes standing from origin rather than current ownership. It also makes Unity non-transferable. The candidate reconciliation preserves those distinctions:
+
+- **Credit:** a claim about what is owed.
+- **Merit:** demonstrated, receipted value under the governing Merit rules.
+- **Ownership:** who currently holds a transferable Merit asset.
+- **Origin:** the immutable earner and originating receipt.
+- **Standing:** the contribution-derived measure computed under the controlling rule, not purchased by acquiring a token.
+- **Unity identity:** the non-transferable identity reference/credential.
+- **Participation:** the participant's current voluntary relationship to the mesh.
+
+No purchase, gift, transfer, grant, relationship tier, wallet balance, or token possession may silently convert into another dimension. This proposal does not alter the Canon's Merit transfer mechanics or standing formula.
+
+---
+
+## 11. Spectral observability and whole-system integrity — candidate reconciliation
+
+**Founder direction recorded in the PR discussion:** diamond architecture should expose consequential properties through separate spectrums of observability while preserving the integrity of the whole. The white-light/ring/choice/spectrum model is used here as an engineering analogy, not as a claim that the metaphor is a physical law or a complete specification.
+
+### 11.1 Candidate observability rule
+
+> **Decompose what must be measured; preserve the relations that make it one system; never let one measured dimension impersonate the whole.**
+
+A consequential system or claim should expose, where applicable, a structured observation vector containing separately inspectable dimensions:
+
+- identity and key-control evidence;
+- consent and participation state;
+- relationship scope and lifecycle;
+- raw observation and measurement method;
+- artifact integrity and provenance;
+- source/instrument independence;
+- interpretation and uncertainty;
+- contribution, Merit origin, and standing;
+- authorization basis and decision;
+- execution record and external outcome evidence;
+- continuity under time, partition, withdrawal, and dependency loss.
+
+The exact dimensions are domain-specific. A dimension that does not apply must be marked NOT_APPLICABLE with a reason; one that was not examined must be NOT_MEASURED; insufficient evidence must remain UNKNOWN; disagreement must remain CONFLICT. These states must not be silently converted to zero, false, pass, or failure.
+
+### 11.2 Whole and spectrum
+
+The white-light analogy is bounded as follows:
+
+- **Whole:** the integrated subject or system, not an average score.
+- **Ring:** continuity of identity and the record of change through time; not a claim that the participant is permanently bound to a relationship.
+- **Choice:** a participant's selection among available possibilities; the system must not report an unchosen possibility as an action.
+- **Decision:** a recorded selection, with actor, context, time, and evidence.
+- **Spectrum:** the separately observable expression, consequence, or measurement of that decision.
+- **Recombination:** an analysis that relates the dimensions while preserving each original measurement, its provenance, and its uncertainty.
+
+A participant is not reducible to one decision, one colour, one score, one role, one token balance, or one observed state. A changed decision does not erase identity continuity. A prior expression does not predetermine a future choice.
+
+### 11.3 No scalar override
+
+No aggregate score, purity index, dashboard light, majority, or composite grade may:
+- conceal a failed mandatory dimension;
+- convert UNKNOWN, NOT_MEASURED, or CONFLICT into PASS;
+- substitute for an authorization decision;
+- certify external-world truth from byte integrity or signer identity alone;
+- certify independence from distinct labels alone;
+- turn a participant's historical choice into current consent;
+- turn a resource balance or Merit holding into standing or authority.
+
+If the Canon retains a Flawless/100% purity threshold, the method for deriving that grade must disclose its dimensions, rules, dependencies, and blind spots. A composite grade may summarize only after all required dimensions and hard constraints are separately exposed. Any mandatory dimension that is failed, unknown, or unmeasured prevents a claim of Flawless for the scope that depends on it. Whether the existing purity doctrine intends this exact rule requires Canon-level review; this proposal does not amend it.
+
+### 11.4 Observation must not silently become intervention
+
+Every measurement must identify whether it is passive observation or an intervention. Where observation can change the subject, record the intervention, timing, and possible effect. Compare before/during/after where feasible. A measurement process cannot claim to have observed an untouched state if it changed the conditions.
+
+Independent channels that disagree must remain separately visible until a declared method resolves the discrepancy. Recombination must not erase the spectrum.
+
+### 11.5 Candidate spectral conformance tests
+
+| ID | Test | Adversarial setup | Required result |
+|---|---|---|---|
+| UNITY-T01 | Identity survives withdrawal | Participant withdraws from active participation | Identity reference and prior evidence remain; active participation is not inferred |
+| UNITY-T02 | No consent by credential | Valid Unity ID/token is present without a current participation act | Identity may be recognized; current consent is not presumed |
+| UNITY-T03 | No identity transfer | Attempt to sell, gift, or rebind a Unity identity/token | Refusal under existing non-transferability law |
+| UNITY-T04 | Relationship-scoped exit | Participant terminates one link but retains other independent links | Only the named relationship terminates, unless a separately defined rule says otherwise |
+| UNITY-T05 | No historical erasure | Withdrawn participant has prior receipted contributions | Prior receipts and origin remain inspectable; no fabricated ongoing participation |
+| UNITY-T06 | No standing purchase | Buyer acquires transferable Merit from another earner | Ownership changes only through the authorized receipted path; origin-derived standing does not move |
+| UNITY-T07 | Choice versus action | Several options are available but only one is selected | Only the selected action is recorded as chosen; unchosen options remain possibilities |
+| UNITY-T08 | Identity through changed expression | Participant makes different decisions over time | Decisions remain distinct; identity continuity is not collapsed into one expression |
+| SPECTRUM-T01 | Unknown dimension | One required dimension has no measurement | Overall scope cannot be graded Flawless or PASS |
+| SPECTRUM-T02 | Hidden failure | Aggregate score is high while a mandatory dimension fails | Hard failure remains visible and cannot be averaged away |
+| SPECTRUM-T03 | False recombination | Two channels conflict and an aggregator averages them | Original observations and conflict remain visible; no silent averaging |
+| SPECTRUM-T04 | Observation intervention | Measurement changes the subject or environment | Intervention and possible effect are recorded; untouched observation is not claimed |
+| SPECTRUM-T05 | Provenance independence | Multiple labels trace to one origin | One provenance root; no false independent corroboration |
+| SPECTRUM-T06 | Scalar impersonation | Dashboard reports a single green state while one dimension is UNKNOWN | Dashboard cannot represent whole-system Flawless/PASS |
+| SPECTRUM-T07 | Whole/spectrum preservation | Recombined result is produced from several measurements | Each original measurement, source, method, uncertainty, and relation remains recoverable |
+
+All tests above are proposed. None is reported as implemented or passed.
+
+---
+
+## 12. Additional source reconciliation and decisions required
+
+The inspected source anchor for the current Unity Canon is:
+
+- Repository: `digenova77-ui/efuse-unity`
+- File: `CANON.md`
+- Inspected blob SHA: `125198ab0d91456b715ed89fe4edf4ff5cadcb5a`
+- Version stated in file: v1.7.3, dated 2026-11-10.
+
+Before any candidate language is promoted to a governing amendment, reconcile at minimum:
+
+1. Canon §II (Unity ID binding) with the distinction between identity and active participation.
+2. Canon §V (Unity token non-transferability and "Unity IS the member") with voluntary, renewable participation and withdrawal.
+3. Canon §VI (Merit origin and standing) with the separation of ownership and standing.
+4. Canon §VII (shared access and revocation) with relationship-scoped exit, grant expiry, and no inferred consent.
+5. Canon §§XVIII and XXII–XXIII (identity everywhere and absolute purity) with spectral observability, explicit UNKNOWN/NOT_MEASURED/CONFLICT states, and the no-scalar-override rule.
+6. The existing Trinity/DCLM authorization boundary with the rule that identity, participation, relationship, evidence, Merit, standing, and resources do not independently authorize an act.
+
+### Additional Founder decisions
+
+1. Does "Unity IS the member" define a non-transferable identity credential, active membership, or both? If both, what explicit event changes participation state without transferring or destroying identity?
+2. Is participation renewed through ongoing voluntary operation, with PAUSED and WITHDRAWN states distinct from identity existence?
+3. Should the spectral observation vector and no-scalar-override rule become candidate requirements for every consequential domain, with domain-specific dimensions?
+4. What exact rule derives Flawless from the dimensions, and which mandatory unknown/unmeasured states block that grade?
+5. Which canonical instrument owns the final definitions of identity, participation, relationship, Merit origin, standing, evidence grade, and authorization?
+
+Until those decisions are resolved and ratified through the proper process, this remains a research proposal. No code, runtime, application, economic movement, token issuance, settlement, or physical actuation is authorized.
+
+---
+
+**Update note:** This proposal now carries the Founder directions on relational integrity, evidence continuity, Unity identity versus participation, and spectral observability in one inspectable candidate document. The additions are not ratified law. The source snapshot and all test statuses remain explicitly bounded.
