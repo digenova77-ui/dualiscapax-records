@@ -449,3 +449,201 @@ Until those decisions are resolved and ratified through the proper process, this
 ---
 
 **Update note:** This proposal now carries the Founder directions on relational integrity, evidence continuity, Unity identity versus participation, and spectral observability in one inspectable candidate document. The additions are not ratified law. The source snapshot and all test statuses remain explicitly bounded.
+
+
+---
+
+## 13. Civic governance, voting integrity, and accountable public authority — candidate framework
+
+**Status:** PROPOSAL / RESEARCH DRAFT. This section creates no governmental authority, electoral system, criminal jurisdiction, public registry, or power to punish. It is a candidate interface for lawful governance and auditable decision-making.
+
+### 13.1 Constitutional boundary
+
+Trinity is a deterministic authorization and evidence-verification boundary inside the system. It is not a sovereign government, legislature, election authority, police service, prosecutor, or court. It cannot replace the lawful institutions that hold those powers.
+
+The civic governance interface must therefore distinguish:
+
+1. **Public law:** statutes, regulations, constitutional requirements, court orders, and jurisdiction-specific rules, each with source, effective date, jurisdiction, scope, and authoritative status.
+2. **Governance proposal:** a proposed rule or policy, its sponsor, rationale, affected population, evidence, and conflicts.
+3. **Deliberation:** public reasoning, submissions, dissent, accessibility, and responses.
+4. **Vote:** an eligible elector's secret choice, with verifiable election-level accounting.
+5. **Certification:** an authorized electoral body certifies the result under the applicable law and audit process.
+6. **Trinity authorization:** a system action is permitted only if its own ratified rules and required external legal authority permit it. A popular vote is not by itself a Trinity authorization receipt.
+7. **Execution and review:** the decision, responsible authority, implementation evidence, review date, and appeal route are separately recorded.
+
+No vote can repeal a constitutional right, authorize an unlawful act, convict a person, or bypass the Trinity authorization gate merely by winning a majority.
+
+### 13.2 Voting integrity: verify the process, protect the voter
+
+**Candidate requirement CIV-1 — Eligibility and ballot secrecy are separate**
+
+The system must be able to establish that an eligible elector was entitled to cast one ballot, and that the ballot was included in the count, without creating a public link between the elector's identity and their selection.
+
+Identity/eligibility evidence must be separated from the secret ballot. Public audit records may establish:
+- election identifier and jurisdiction;
+- eligibility rules and their authoritative source;
+- aggregate turnout and ballot accounting;
+- opening/closing controls and custody events;
+- software/configuration versions where applicable;
+- count, reconciliation, recount, and audit outcomes;
+- anomalies, challenges, corrections, and certification.
+
+They must not expose an individual's selection or enable coercion, vote buying, retaliation, or inference of the vote.
+
+**Candidate requirement CIV-2 — No single-channel proof**
+
+A digital signature, Unity ID, device attestation, ledger entry, or hash is not sufficient on its own to prove that a vote was freely cast, correctly recorded, or correctly counted.
+
+Where a legally authorized election process uses paper ballots, voter-verifiable records, manual recounts, or risk-limiting audits, Trinity may monitor the existence, custody, reconciliation, and results of those controls. It must not silently substitute an unverified software tally for the legally authoritative count.
+
+**Candidate requirement CIV-3 — Independent election roles**
+
+The roles of voter registration/eligibility, ballot issuance, ballot custody, counting, audit, dispute adjudication, and certification must be explicitly separated. No one actor or agent may unilaterally control all stages.
+
+Observers and auditors attest to the evidence they examined; they do not gain authority to change votes or certify beyond their legal mandate. Conflicts of interest and shared dependencies must be declared.
+
+**Candidate requirement CIV-4 — Non-coercion and no compelled disclosure**
+
+No participant may be required to reveal their ballot choice as a condition of membership, access, employment, benefits, or safety. No interface may create a receipt that proves how a person voted.
+
+A voter may decline to vote, spoil a ballot where law provides, or abstain from a non-binding consultation. Abstention is not evidence of fraud, disloyalty, guilt, or agreement with the winning side.
+
+### 13.3 The accountability question: obligation, response, and non-response
+
+The system may ask public officials and other actors to explain decisions where a defined legal or institutional duty to explain exists. It may also invite voluntary explanations from participants.
+
+Every accountability request must identify:
+- the actor and the public role in question;
+- the specific decision, omission, or statutory duty;
+- the legal or policy source that creates the duty;
+- the question being asked and the evidence available;
+- the response deadline and accessible response channels;
+- whether the response is mandatory or voluntary;
+- the independent authority that can determine whether the duty was breached;
+- the appeal, correction, and review route.
+
+**Non-response must be recorded as NON_RESPONSE / UNRESOLVED, not as guilt or proof of misconduct.** A reasonable explanation may include lack of notice, disability, language access, safety, privilege, legal advice, lack of jurisdiction, or a genuine dispute about the duty. The system must record the reason supplied without deciding its legal sufficiency unless an authorized independent body has that mandate.
+
+Repeated questions must be bounded by a legitimate public purpose, reasonable frequency, accessibility, and anti-harassment controls. The system must not use repeated questioning to intimidate or compel political speech.
+
+A public official's lawful refusal to answer may itself be a matter for legislative, judicial, administrative, or public scrutiny. Trinity can preserve the record and route it to the proper authority; it cannot manufacture a legal duty or punish the official for silence.
+
+### 13.4 Justice as proportionate repair and bounded access — the Newtonian analogy
+
+**Candidate principle: the response to proven harm should be causally connected to the harm, proportionate to its severity, limited to the risk or capability that requires restriction, and directed toward repair and safe reintegration wherever possible.**
+
+The Newtonian analogy is an engineering metaphor, not a sentencing formula. In mechanics, equal and opposite forces are not a moral theory. Human harms are not interchangeable quantities, and a system must never calculate punishment as an equal quantity of suffering.
+
+The useful translation is **counter-equivalence of repair, not equivalence of pain**:
+
+- identify the proven harm and its affected parties;
+- identify the capability or access path that enabled or could repeat the harm;
+- prevent recurrence through the narrowest effective restriction;
+- require repair or restitution where lawful, feasible, and appropriately determined;
+- support rehabilitation and safe return;
+- review and remove restrictions when their basis expires.
+
+The response must be based on an independently established finding, not an accusation, a vote, a reputation score, a model inference, or a refusal to answer.
+
+### 13.5 Candidate access-restriction ladder
+
+This ladder is a design vocabulary for system access, not a replacement criminal sentencing regime. Restrictions that affect legal rights, livelihood, essential services, or liberty require the appropriate legal authority and safeguards.
+
+| State | Meaning | Permitted control | Exit condition |
+|---|---|---|---|
+| A0 — Normal | No substantiated restriction | Ordinary authorized access | Not applicable |
+| A1 — Safeguard | Credible immediate risk requires temporary protection, without a finding of guilt | Narrow, reversible protection of the affected resource or operation | Prompt independent review; expiry unless renewed lawfully |
+| A2 — Scoped restriction | Authorized finding supports limiting a specific capability | Deny only the relevant capability, endpoint, privilege, or transaction class | Defined review date and appeal |
+| A3 — Restorative plan | Responsibility and repair pathway are established through a lawful process and freely accepted where consent is required | Time-bounded obligations, supervised access where necessary, repair and education | Verified completion, safety review, and restoration |
+| A4 — Restricted participation | A competent authority determines a continuing, specific risk justifies a broader but still bounded restriction | Isolate the affected system role or high-risk capability; preserve unrelated rights and records | Periodic independent review, proportionality test, and reintegration criteria |
+| A5 — External legal referral | Conduct may constitute an offence or requires powers beyond the system's jurisdiction | Preserve evidence and refer through lawful channels; no private detention or punishment | Decision by the competent public authority |
+
+No level may be imposed by automated scoring alone. A1 safeguards must not be used as indefinite punishment. A2–A4 require a documented basis, notice, opportunity to respond, independent decision, appeal, expiry/review, and a clear record of the rights and capabilities affected. Essential access must not be denied as leverage unless a lawful authority specifically permits the restriction and proportionality is established.
+
+### 13.6 Public accountability without public humiliation
+
+The system should publish institutional conduct and accountability records to the extent lawful and safe:
+- the rule and authority relied upon;
+- the decision and responsible office;
+- evidence considered and evidence withheld, with reasons;
+- declared conflicts of interest;
+- dissenting reasons;
+- the outcome, appeal, correction, and review date;
+- whether promised remedies were completed.
+
+It must not create a public wall of shame, publish personal details to invite harassment, expose victims, or label an accused person as guilty before a lawful finding. Public transparency should illuminate the exercise of public power, not turn people into spectacles.
+
+Where a public official is acting in an official capacity, transparency may be greater than for a private individual, but privacy, safety, open-justice rules, and applicable law still govern disclosure.
+
+### 13.7 Due-process and justice invariants
+
+The following are mandatory design constraints for any future justice or access-control integration:
+
+- **Legality:** no sanction for conduct that was not prohibited by an applicable rule at the relevant time.
+- **Notice:** the person receives the specific allegation, rule, evidence summary, and possible consequence.
+- **Presumption:** an allegation or non-response is not a finding.
+- **Burden:** the authorized decision-maker applies the evidentiary standard required by the relevant law and proceeding.
+- **Impartiality:** investigators, decision-makers, witnesses, and appeal reviewers have separated roles and declared conflicts.
+- **Hearing:** meaningful opportunity to respond, provide evidence, challenge adverse evidence, and obtain assistance or representation where applicable.
+- **Reasons:** written reasons connect established facts, governing rule, proportionality, and selected measure.
+- **Least restrictive means:** choose the narrowest effective restriction; do not restrict unrelated capabilities.
+- **Proportionality:** severity and duration are connected to proven harm, culpability, recurrence risk, and lawful sentencing principles.
+- **Restoration:** prioritize repair, rehabilitation, and reintegration where safe, lawful, and appropriate; restorative participation must be voluntary.
+- **Appeal and correction:** provide independent review and a process to correct erroneous records.
+- **Sunset:** every non-permanent restriction has an expiry or mandatory review date; no hidden permanent penalty.
+- **No double punishment:** preserve applicable protections against repeated prosecution or punishment.
+- **Victim safety and dignity:** do not compel contact, forgiveness, mediation, or restorative participation.
+- **No private prison:** access restriction is not physical confinement. Trinity has no authority to detain, restrain, surveil beyond lawful scope, or physically punish a person.
+
+### 13.8 Proposed civic and justice conformance tests
+
+| ID | Test | Adversarial setup | Required result |
+|---|---|---|---|
+| CIV-T01 | Secret ballot | Attempt to correlate a Unity ID with a ballot choice | No public or operator-accessible identity-choice mapping |
+| CIV-T02 | Eligibility/count separation | Eligible ballot is cast; identity service later becomes unavailable | Secret ballot and election-level accounting remain independently auditable |
+| CIV-T03 | Duplicate ballot attempt | Same eligibility credential attempts a second ballot | Duplicate is rejected or handled by the election's legally defined process; no vote choice is exposed |
+| CIV-T04 | Tally tampering | Published tally conflicts with independent ballot accounting | Discrepancy is flagged; certification is held for authorized audit |
+| CIV-T05 | Auditor conflict | Auditor shares control or dependency with a candidate or counting authority | Conflict is disclosed; independent review required |
+| CIV-T06 | Abstention | Eligible person declines to vote | Recorded only as lawful non-participation where appropriate; no adverse inference |
+| CIV-T07 | Coerced disclosure | Employer or system operator demands proof of an individual's vote | Request refused; secret ballot preserved |
+| CIV-T08 | Official accountability | Official fails to answer a documented duty-to-explain request | Non-response is recorded; only competent authority determines breach |
+| CIV-T09 | No duty exists | A person is repeatedly asked to explain a voluntary political view | No coercive escalation; harassment/frequency control applies |
+| JUST-T01 | Accusation only | Complaint alleges misconduct without a finding | No punitive access restriction; evidence may be preserved and assessed |
+| JUST-T02 | Narrow restriction | Proven abuse affects one privileged capability | Only that capability is restricted where authorized |
+| JUST-T03 | Aggregate-score punishment | A model produces a low trust score without proven conduct | No sanction or denial of rights based on score |
+| JUST-T04 | Independent hearing | Investigator attempts to decide their own case | Decision is blocked or referred to an independent adjudicator |
+| JUST-T05 | Restorative consent | Participant declines restorative process | No penalty merely for declining; lawful alternative process remains |
+| JUST-T06 | Repair versus revenge | Proposed sanction inflicts equivalent suffering | Rejected; remedy must be lawful, proportionate, and repair-oriented |
+| JUST-T07 | Sunset | Restriction passes its review/expiry date without renewed authority | Restriction expires or is escalated to independent review; it does not silently persist |
+| JUST-T08 | Victim protection | Restorative plan would require unsafe contact | Contact is not compelled; safety and victim choice govern |
+| JUST-T09 | False accusation correction | Finding is overturned on appeal | Access state and derivative records are corrected; original history remains with the reversal linked |
+| JUST-T10 | Jurisdiction boundary | Trinity is asked to imprison, physically punish, or publicly expose a person | Refuse; preserve lawful evidence and refer to competent authority if appropriate |
+
+All tests are proposed. None is represented as implemented, executed, or passed.
+
+### 13.9 Legal source anchors for Canadian-context review
+
+The following are reference anchors for legal review, not a complete legal opinion and not a claim that Canadian law applies identically to every jurisdiction:
+
+- Canadian Charter of Rights and Freedoms, especially sections 7–11: legality, liberty, fair process, and safeguards in criminal and penal proceedings.
+- Department of Justice Canada Charterpedia, section 11(d): presumption of innocence and independent, impartial tribunal.
+- Canada Elections Act, including provisions on secrecy of the vote and prohibitions on intimidation, coercion, interference, and bribery.
+- Criminal Code section 715.53: principles for restorative justice processes, including free consent, withdrawal, safety, dignity, meaningful participation, and reintegration.
+- Elections Canada materials on secrecy, privacy, and electoral administration.
+- NIST election auditing materials on ballot accounting, chain of custody, recounts, and risk-limiting audits.
+
+Each future deployment must identify its actual jurisdiction and obtain qualified legal review before it handles official voting, public-sector decisions, sanctions, or personal data.
+
+---
+
+## 14. Additional Founder decisions — civic governance and justice
+
+1. Should Trinity's civic interface begin as an **observability and evidence layer only**, with no power to conduct official elections or adjudicate offences?
+2. Should every governance proposal carry its jurisdiction, legal authority, affected population, rights impact, sponsor, evidence, dissent, and review/appeal path before a vote can be presented?
+3. Should official duty-to-explain requests be distinguished from voluntary public questions, with non-response always remaining unresolved until a competent authority determines whether a duty existed and was breached?
+4. Should secret ballot choice remain unlinkable to Unity identity, while eligibility, ballot accounting, tally integrity, and audit evidence remain verifiable?
+5. Should access restrictions follow the bounded ladder in §13.5, with independent adjudication, least-restrictive scope, sunset, appeal, and reintegration?
+6. Should restorative justice be offered as a voluntary repair path, never imposed as compelled contact, humiliation, or equivalent suffering?
+7. Which jurisdiction's public-law rules should be used for the first detailed legal mapping? The Canadian framework above is only an initial reference context.
+
+Until these decisions are resolved, legally reviewed, and ratified through the appropriate authority, this section remains a proposal. It creates no official voting process, public registry, justice jurisdiction, sanction, or new Trinity permission.
